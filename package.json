@@ -1,0 +1,46 @@
+{
+  "name": "gwd-scoresheet",
+  "version": "1.0.0",
+  "description": "A scoresheet for Geeks Who Drink",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "heroku-postbuild": "webpack -p",
+    "build-dev": "webpack -d --watch",
+    "start-dev": "npx nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TomGower/gwd-scoresheet.git"
+  },
+  "keywords": [],
+  "author": "Tom Gower",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TomGower/gwd-scoresheet/issues"
+  },
+  "homepage": "https://github.com/TomGower/gwd-scoresheet#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "recoil": "0.0.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "elliptic": ">=6.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "serialize-javascript": ">=3.1.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
